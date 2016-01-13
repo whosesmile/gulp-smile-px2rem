@@ -45,10 +45,10 @@ Rem version: `test.css`
 
 ```
   @media screen and (max-width:980px) {
-    #header { max-width: 750px; box-shadow: 0 0 1px #ddd; }
+    #header { max-width: 46.875rem; box-shadow: 0 0 1px #ddd; }
   }
   @media only screen and (min-device-width:241px) and (max-device-width:360px) {
-    #header { max-width: 750px; box-shadow: 0 0 1px #ddd; }
+    #header { max-width: 46.875rem; box-shadow: 0 0 1px #ddd; }
   }
-  .selector { width: 150px; height: 64px; font-size: 28px; border: 1px solid #ddd; }
+  .selector { width: 9.375rem; height: 4rem; font-size: 1.75rem; border: 1px solid #ddd; }
 ```

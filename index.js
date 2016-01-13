@@ -18,7 +18,7 @@ function prefixStream(prefixText) {
 function px2rem(options) {
   options = _.merge({
     dpr: 2,
-    rem: 32,
+    rem: 16,
     one: false // whether convert 1px
 
   }, options);
@@ -42,7 +42,7 @@ function px2rem(options) {
         if (options.one === false && '1px' === match.toLowerCase()) {
           return match;
         }
-        return parseInt(match) / parseFloat(options.rem / options.dpr, 10) + 'rem';
+        return parseInt(match) / parseFloat(options.rem * options.dpr, 10) + 'rem';
       });
       file.contents = new Buffer(content);
       cb(null, file);

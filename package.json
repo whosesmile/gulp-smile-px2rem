@@ -1,6 +1,6 @@
 {
   "name": "gulp-smile-px2rem",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "replace px unit to rem unit for css",
   "dependencies": {
     "gulp-util": "^3.0.0",

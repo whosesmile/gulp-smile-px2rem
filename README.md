@@ -18,7 +18,7 @@ gulp.task('px2rem', function () {
 ```
 px2rem({
   dpr: 2,             // base device pixel ratio (default: 2)
-  rem: 32,            // html font-size (default: 32)
+  rem: 16,            // root element (html) font-size (default: 16)
   one: false          // whether convert 1px to rem (default: false)
 })
 ```
@@ -45,10 +45,10 @@ Rem version: `test.css`
 
 ```
   @media screen and (max-width:980px) {
-    #header { max-width: 46.875rem; box-shadow: 0 0 1px #ddd; }
+    #header { max-width: 23.4375rem; box-shadow: 0 0 1px #ddd; }
   }
   @media only screen and (min-device-width:241px) and (max-device-width:360px) {
-    #header { max-width: 46.875rem; box-shadow: 0 0 1px #ddd; }
+    #header { max-width: 23.4375rem; box-shadow: 0 0 1px #ddd; }
   }
-  .selector { width: 9.375rem; height: 4rem; font-size: 1.75rem; border: 1px solid #ddd; }
+  .selector { width: 4.6875rem; height: 2rem; font-size: 0.875rem; border: 1px solid #ddd; }
 ```

@@ -38,7 +38,7 @@ function px2rem(options) {
     }
     if (file.isBuffer()) {
       gutil.log(gutil.colors.green('\tcompile:'), file.relative);
-      var content = file.contents.toString(enc).replace(/\b\d+(\.\d+)?px\b(?!\s*\))/ig, function (match) {
+      var content = file.contents.toString(enc).replace(/\b\d+(\.\d+)?px\b(?!(\s*\)|\s*"\]))/ig, function (match) {
         if (options.one === false && '1px' === match.toLowerCase()) {
           return match;
         }
